@@ -1,0 +1,30 @@
+.mainNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainHeader {
+  margin-top: 3.4rem;
+}
+.navList {
+  display: flex;
+  gap: 1.8rem;
+  list-style: none;
+  text-decoration: none;
+}
+.navList li > a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 5 00;
+  color: var(--color-black);
+  transition: 300ms;
+}
+.navList li > a:hover {
+  color: var(--color-limegreen-100);
+}
+.cta {
+  display: flex;
+  gap: 2.6rem;
+  align-items: center;
+}
