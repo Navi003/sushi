@@ -137,6 +137,10 @@ q {
   quotes: none;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 blockquote:before,
 blockquote:after,
 q:before,
