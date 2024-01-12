@@ -1,0 +1,11 @@
+.ratingCardBox {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 25px;
+  padding: 1rem 0.5rem;
+  box-shadow: 7px 35px 51px 0px rgba(0, 0, 0, 0.14);
+}
+.raitingHero {
+  display: flex;
+}

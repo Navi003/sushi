@@ -3,8 +3,6 @@
   grid-template-columns: 1fr 1fr;
   margin-top: 8rem;
 }
-.imageBox {
-}
 
 .heroTitle {
   font-size: 4rem;
@@ -25,4 +23,17 @@
 }
 .textBox {
   place-self: center;
+}
+.imageBox {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.raitingHero {
+  display: flex;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  gap: 2rem;
+  transform: translate(-50%, -50%);
 }

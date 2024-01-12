@@ -3,6 +3,7 @@ import React from "react";
 import Button from "../ui/Button";
 import Image from "next/image";
 import styles from "./Hero.module.css";
+import RatingCard from "../ui/RatingCard";
 interface HeroProps {}
 const Hero: FC<HeroProps> = (): JSX.Element => {
   return (
@@ -31,6 +32,10 @@ const Hero: FC<HeroProps> = (): JSX.Element => {
             height={600}
           />
         </figure>
+        <div className={styles.raitingHero}>
+          <RatingCard />
+          <RatingCard />
+        </div>
       </div>
     </section>
   );
