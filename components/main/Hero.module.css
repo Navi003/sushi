@@ -21,13 +21,17 @@
   font-size: 1.6rem;
   line-height: 44px;
 }
-.textBox {
+/* .textBox {
   place-self: center;
-}
+} */
 .imageBox {
   display: flex;
   position: relative;
   align-items: center;
+}
+.imageBox > figure > img {
+  width: 100%;
+  object-fit: cover;
 }
 .raitingHero {
   display: flex;
@@ -36,4 +40,42 @@
   left: 50%;
   gap: 2rem;
   transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 1150px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 6rem;
+  }
+  .imageBox {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .heroTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 55px;
+    margin-bottom: 2rem;
+  }
+
+  .heroText {
+    font-size: 1.2rem;
+    line-height: 38px;
+  }
+
+  .hero {
+    margin-top: 2rem;
+  }
+  .imageBox > figure > img {
+    width: 100%;
+    object-fit: contain;
+  }
 }
