@@ -1,0 +1,28 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 8rem;
+}
+.imageBox {
+}
+
+.heroTitle {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 75px;
+  margin-bottom: 4rem;
+}
+.heroTitle > span {
+  color: var(--color-limegreen-100);
+}
+.heroActions {
+  display: flex;
+  margin-top: 2.25rem;
+}
+.heroText {
+  font-size: 1.6rem;
+  line-height: 44px;
+}
+.textBox {
+  place-self: center;
+}
