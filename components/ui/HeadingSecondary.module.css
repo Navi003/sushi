@@ -1,0 +1,7 @@
+.headingSecondary {
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 5px;
+  color: rgba(246, 59, 59, 1);
+  text-transform: uppercase;
+}

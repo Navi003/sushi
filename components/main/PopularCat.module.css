@@ -1,0 +1,18 @@
+.popularityCat {
+  margin-top: 12.5rem;
+}
+.headingTers {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 3.75rem;
+  font-weight: 700;
+}
+.headingBox {
+  margin-bottom: 4.1rem;
+}
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
