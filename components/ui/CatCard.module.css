@@ -1,12 +1,17 @@
 .catCard {
   padding: 3.1rem;
-  border: 1px solid #777;
+
   border-radius: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   flex-grow: 1;
+  box-shadow: 2px 10px 30px 0px rgba(0, 0, 0, 0.1);
+  transition: 300ms;
+}
+.catCard:hover {
+  scale: 1.05;
 }
 .textBox {
   text-align: center;

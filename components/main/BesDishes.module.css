@@ -1,8 +1,14 @@
 .headingBox {
   margin-bottom: 4.1rem;
 }
-.headingTers {
+.headingText {
   margin-top: 1rem;
   font-size: 3.75rem;
   font-weight: 700;
+}
+.bestDishes {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }

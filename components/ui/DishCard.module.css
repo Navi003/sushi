@@ -1,0 +1,27 @@
+.dishCard {
+  border-radius: 40px;
+  text-align: center;
+
+  padding: 2rem;
+  flex-grow: 1;
+  box-shadow: 2px 9px 42px 0px rgba(0, 0, 0, 0.12);
+}
+.dishCardText > h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+.dishCardText > p {
+  font-size: 1.37rem;
+  color: rgb(172, 172, 172);
+  font-weight: 600;
+}
+.dishCardPrice > p {
+  font-size: 1.37rem;
+  font-weight: 700;
+}
+.dishCardPrice {
+  margin-top: 2.1rem;
+  display: flex;
+  justify-content: space-between;
+}
