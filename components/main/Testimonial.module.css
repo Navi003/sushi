@@ -1,14 +1,56 @@
 .headingTers {
   margin-top: 1rem;
-  font-size: 3.75rem;
+  font-size: 3.1rem;
   font-weight: 700;
+
+  line-height: 1.3;
 }
 .headingBox {
-  margin-bottom: 4.1rem;
+  margin-bottom: 2dvb;
 }
 .testimonial {
   display: flex;
   justify-content: space-between;
   gap: 5rem;
-  height: 100vh;
+  /* height: 100vh; */
+}
+.customerFeedback {
+}
+.customerFeedbackContainer {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+.customerFeedback > h6 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.customerFeedback > div {
+  display: flex;
+  gap: 1rem;
+}
+.text {
+  line-height: 1.4;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: rgba(85, 85, 85, 1);
+  margin-bottom: 4rem;
+}
+.headingSec {
+  margin-bottom: 2rem;
+}
+.imageBox {
+  position: relative;
+}
+.imageBox::after {
+  content: "";
+  height: 70%;
+  width: 100%;
+  background-color: var(--color-limegreen-100);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 140px 140px 14px 14px;
 }
