@@ -30,7 +30,7 @@ const Testimonial: FC<TestimonialProps> = (): JSX.Element => {
         </div>
         <div>
           <p className={styles.text}>
-            “I had the pleasure of dining at Foodi last night, and I'm still
+            “I had the pleasure of dining at Foodi last night, and I`m still
             raving about the experience! The attention to detail in presentation
             and service was impeccable”
           </p>
