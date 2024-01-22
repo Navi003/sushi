@@ -14,8 +14,7 @@
   gap: 5rem;
   /* height: 100vh; */
 }
-.customerFeedback {
-}
+
 .customerFeedbackContainer {
   display: flex;
   align-items: center;
@@ -53,4 +52,13 @@
   bottom: 0;
   z-index: -1;
   border-radius: 140px 140px 14px 14px;
+}
+
+.textBox {
+  margin-top: auto;
+}
+@media only screen and (max-width: 960px) {
+  .testimonial {
+    flex-direction: column;
+  }
 }

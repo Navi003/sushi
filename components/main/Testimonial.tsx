@@ -16,7 +16,7 @@ const Testimonial: FC<TestimonialProps> = (): JSX.Element => {
           alt="sushi-cook"
         />
       </div>
-      <div>
+      <div className={styles.textBox}>
         <div className={styles.headingBox}>
           <HeadingSecondary
             className={styles.headingSec}

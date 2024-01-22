@@ -1,3 +1,28 @@
+.headingTers {
+  margin-top: 1rem;
+  font-size: 3.75rem;
+  font-weight: 700;
+}
+.headingBox {
+  margin-bottom: 4.1rem;
+}
+.storyCardContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
 .ourStorySection {
-  height: 100vh;
+  margin-top: 11rem;
+  display: flex;
+  margin-bottom: 10rem;
+}
+.action > p {
+  line-height: 1.4;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.7rem;
+}
+.containerButton {
+  display: flex;
 }

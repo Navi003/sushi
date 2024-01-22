@@ -155,6 +155,6 @@ table {
 }
 
 body {
-  background-color: #e7ffea;
+  background-color: var(--color-white);
   font-family: sans-serif;
 }
