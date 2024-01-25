@@ -26,3 +26,9 @@
 .containerButton {
   display: flex;
 }
+@media only screen and (max-width: 1160px) {
+  .ourStorySection {
+    flex-direction: column;
+    gap: 5rem;
+  }
+}

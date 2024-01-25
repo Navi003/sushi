@@ -1,0 +1,10 @@
+.listItem {
+  list-style: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 36px;
+}
+.listItem > a {
+  text-decoration: none;
+  color: rgba(85, 85, 85, 1);
+}
