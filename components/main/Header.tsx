@@ -16,20 +16,20 @@ function Header() {
         </div>
         <ul className={styles.navList}>
           <li>
-            <Link href="/home">Home</Link>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="/menu">Menu</Link>
+            <Link href="#popularCat">Menu</Link>
           </li>
 
           <li>
-            <Link href="/aboutus">About</Link>
+            <Link href="#aboutus">About</Link>
           </li>
           <li>
             <Link href="/services">Services</Link>
           </li>
           <li>
-            <Link href="/offers">Offers</Link>
+            <Link href="#bestDishes">Offers</Link>
           </li>
         </ul>
         <div className={styles.cta}>

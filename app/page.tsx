@@ -1,5 +1,5 @@
 import BestDishes from "@/components/main/BestDishes";
-import Footer from "@/components/main/Footer";
+
 import Hero from "@/components/main/Hero";
 import OurStory from "@/components/main/OurStory";
 import PopularCat from "@/components/main/PopularCat";
@@ -13,7 +13,6 @@ export default function Home() {
       <BestDishes />
       <Testimonial />
       <OurStory />
-      <Footer />
     </main>
   );
 }

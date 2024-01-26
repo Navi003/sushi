@@ -6,7 +6,7 @@ import DishCard from "../ui/DishCard";
 interface BestDishesProps {}
 const BestDishes: FC<BestDishesProps> = (): JSX.Element => {
   return (
-    <section className={styles.sectionBestDishes}>
+    <section id="bestDishes" className={styles.sectionBestDishes}>
       <div className={styles.headingBox}>
         <HeadingSecondary>Special Dishes</HeadingSecondary>
         <h2 className={styles.headingText}>Best Dishes From Our Menu</h2>

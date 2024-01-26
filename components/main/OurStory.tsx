@@ -7,7 +7,7 @@ import Button from "../ui/Button";
 interface OurStoryProps {}
 const OurStory: FC<OurStoryProps> = (): JSX.Element => {
   return (
-    <section className={styles.ourStorySection}>
+    <section className={styles.ourStorySection} id="aboutus">
       <div className={styles.textBox}>
         <div className={styles.headingBox}>
           <HeadingSecondary>OUR STORY & SERVICES</HeadingSecondary>

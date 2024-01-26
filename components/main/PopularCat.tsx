@@ -9,6 +9,7 @@ interface PopularCatProps {}
 const PopularCat: FC<PopularCatProps> = (): JSX.Element => {
   return (
     <section
+      id="#popularCat"
       className={styles.popularityCat}
       style={{
         marginBottom: "18rem",

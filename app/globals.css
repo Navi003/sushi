@@ -149,6 +149,10 @@ q:after {
   content: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
