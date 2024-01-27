@@ -10,6 +10,7 @@ const Testimonial: FC<TestimonialProps> = (): JSX.Element => {
     <section className={styles.testimonial}>
       <div className={styles.imageBox}>
         <Image
+          className={styles.image}
           src="/sushi-cook.png"
           height={600}
           width={600}

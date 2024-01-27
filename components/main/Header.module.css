@@ -29,6 +29,7 @@
 .cta {
   display: flex;
   align-items: center;
+  gap: 2rem;
 }
 
 .inputSearch {
@@ -36,7 +37,6 @@
   border: none;
   border-radius: 13px;
   outline: none;
-  width: 100%;
 }
 .inputSearch:focus,
 .inputSearch:active {
@@ -85,5 +85,8 @@
   .form {
     flex: 0 1;
     flex-basis: 50%;
+  }
+  .inputSearch {
+    width: 100%;
   }
 }
