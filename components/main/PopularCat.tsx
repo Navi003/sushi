@@ -4,6 +4,7 @@ import HeadingSecondary from "../ui/HeadingSecondary";
 
 import styles from "./PopularCat.module.css";
 import CatCard from "../ui/CatCard";
+import { categories } from "@/data/data";
 
 interface PopularCatProps {}
 const PopularCat: FC<PopularCatProps> = (): JSX.Element => {
@@ -23,10 +24,16 @@ const PopularCat: FC<PopularCatProps> = (): JSX.Element => {
       </div>
 
       <ul className={styles.cardContainer}>
-        <CatCard />
-        <CatCard />
-        <CatCard />
-        <CatCard />
+        {categories.map((dish) => {
+          return (
+            <CatCard
+              dishesAvailable={dish.quantity}
+              name={dish.name}
+              image={dish.image}
+              key={dish.name}
+            />
+          );
+        })}
       </ul>
     </section>
   );

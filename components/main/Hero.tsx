@@ -20,7 +20,15 @@ const Hero: FC<HeroProps> = (): JSX.Element => {
         </div>
         <div className={styles.heroActions}>
           <Button>Order Now</Button>
-          <button>Watch Video</button>
+          <button className={styles.playButton}>
+            Watch video
+            <Image
+              src="/icons/play.png"
+              width="70"
+              height="70"
+              alt="play-button"
+            />
+          </button>
         </div>
       </div>
       <div className={styles.imageBox}>

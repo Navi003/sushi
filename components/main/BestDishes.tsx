@@ -3,6 +3,7 @@ import React from "react";
 import HeadingSecondary from "../ui/HeadingSecondary";
 import styles from "./BesDishes.module.css";
 import DishCard from "../ui/DishCard";
+import { bestDishes } from "@/data/data";
 interface BestDishesProps {}
 const BestDishes: FC<BestDishesProps> = (): JSX.Element => {
   return (
@@ -12,9 +13,18 @@ const BestDishes: FC<BestDishesProps> = (): JSX.Element => {
         <h2 className={styles.headingText}>Best Dishes From Our Menu</h2>
       </div>
       <div className={styles.bestDishes}>
-        <DishCard />
-        <DishCard />
-        <DishCard />
+        {bestDishes.map((dish) => {
+          return (
+            <DishCard
+              rating={dish.rating}
+              description={dish.description}
+              price={dish.price}
+              name={dish.name}
+              image={dish.image}
+              key={dish.name}
+            />
+          );
+        })}
       </div>
     </section>
   );

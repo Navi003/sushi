@@ -16,6 +16,8 @@
 .heroActions {
   display: flex;
   margin-top: 2.25rem;
+  align-items: center;
+  gap: 1.5rem;
 }
 .heroText {
   font-size: 1.6rem;
@@ -40,6 +42,15 @@
   left: 50%;
   gap: 2rem;
   transform: translate(-50%, -50%);
+}
+
+.playButton {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 @media only screen and (max-width: 1150px) {

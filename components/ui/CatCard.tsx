@@ -2,21 +2,24 @@ import Image from "next/image";
 import { FC } from "react";
 import React from "react";
 import styles from "./CatCard.module.css";
-interface CatCardProps {}
-const CatCard: FC<CatCardProps> = (): JSX.Element => {
+interface CatCardProps {
+  name: string;
+  dishesAvailable: number;
+  image: string;
+}
+const CatCard: FC<CatCardProps> = ({
+  name,
+  image,
+  dishesAvailable,
+}): JSX.Element => {
   return (
     <li className={styles.catCard}>
       <div className={styles.imageBox}>
-        <Image
-          src="/main-dish.png"
-          width={100}
-          height={100}
-          alt="main-disch image"
-        />
+        <Image src={image} width={100} height={100} alt={name} />
       </div>
       <div className={styles.textBox}>
-        <h5>Main Dish</h5>
-        <p>(86 disches)</p>
+        <h5>{name}</h5>
+        <p>({dishesAvailable} disches)</p>
       </div>
     </li>
   );
