@@ -12,6 +12,9 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+.bestDishes > div {
+  flex: 1;
+}
 .sectionBestDishes {
   margin-bottom: 20rem;
 }
