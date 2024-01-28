@@ -32,3 +32,8 @@
     gap: 5rem;
   }
 }
+@media only screen and (max-width: 760px) {
+  .storyCardContainer {
+    grid-template-columns: 1fr;
+  }
+}
