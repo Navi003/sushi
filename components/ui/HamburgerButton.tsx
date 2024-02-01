@@ -1,13 +1,18 @@
 "use client";
 // HamburgerButton.tsx
-import React, { useState } from "react";
+import React, { FC, useState } from "react";
 import styles from "./HamburgerButton.module.css";
 
-const HamburgerButton: React.FC = () => {
+interface HamburgerButtonProps {
+  onShowNav: (bool: boolean) => void;
+}
+
+const HamburgerButton: FC<HamburgerButtonProps> = ({ onShowNav }) => {
   const [isActive, setIsActive] = useState<boolean>(false);
 
   const toggleHamburger = () => {
     setIsActive(!isActive);
+    onShowNav(true);
   };
 
   return (

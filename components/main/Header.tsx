@@ -1,19 +1,26 @@
-import React from "react";
+"use client";
+import React, { FC, useState } from "react";
 import Link from "next/link";
 import Logo from "../ui/Logo";
 import Image from "next/image";
 import styles from "./Header.module.css";
 import Button from "../ui/Button";
 import HamburgerButton from "../ui/HamburgerButton";
+import MobileNav from "../ui/MobileNav";
 
-function Header() {
+interface HeaderProps {}
+
+const Header: FC<HeaderProps> = (): JSX.Element => {
+  const [showNav, setShowNav] = useState(false);
+
   return (
     <header className={styles.mainHeader}>
       <nav className={styles.mainNav}>
         <div className={styles.logoMobNav}>
           <Logo />
-          <HamburgerButton />
+          <HamburgerButton onShowNav={setShowNav} />
         </div>
+        <MobileNav showNav={showNav} setShowNav={setShowNav} />
         <ul className={styles.navList}>
           <li>
             <Link href="/">Home</Link>
@@ -46,6 +53,6 @@ function Header() {
       </nav>
     </header>
   );
-}
+};
 
 export default Header;
