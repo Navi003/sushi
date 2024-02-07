@@ -1,5 +1,3 @@
-"use client";
-
 import { FC } from "react";
 import React from "react";
 import styles from "./MobileNav.module.css";
@@ -10,18 +8,13 @@ interface MobileNavProps {
   showNav: boolean;
   setShowNav: (state: boolean) => void;
 }
-const MobileNav: FC<MobileNavProps> = ({
-  className,
-  showNav,
-  setShowNav,
-}): JSX.Element => {
+const MobileNav: FC<MobileNavProps> = ({ className, showNav }): JSX.Element => {
   return (
     <nav
       className={`${styles.mobileNav} ${className ? className : ""} ${
         !showNav && styles.hidden
       }`}
     >
-      <div className={styles.close} onClick={(e) => setShowNav(false)}></div>
       <ul className={styles.navList}>
         <li>
           <Link href="/">Home</Link>

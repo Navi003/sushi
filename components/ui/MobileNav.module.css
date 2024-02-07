@@ -43,5 +43,5 @@
 }
 
 .hidden {
-  display: none;
+  transform: translateX(-50rem);
 }

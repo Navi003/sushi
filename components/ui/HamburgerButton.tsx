@@ -4,7 +4,7 @@ import React, { FC, useState } from "react";
 import styles from "./HamburgerButton.module.css";
 
 interface HamburgerButtonProps {
-  onShowNav: (bool: boolean) => void;
+  onShowNav: any;
 }
 
 const HamburgerButton: FC<HamburgerButtonProps> = ({ onShowNav }) => {
@@ -12,11 +12,14 @@ const HamburgerButton: FC<HamburgerButtonProps> = ({ onShowNav }) => {
 
   const toggleHamburger = () => {
     setIsActive(!isActive);
-    onShowNav(true);
+    onShowNav((bool: any) => !bool);
   };
 
   return (
     <div
+      style={{
+        zIndex: "1000",
+      }}
       className={`${styles.hamburgerContainer} ${
         isActive ? styles.change : ""
       }`}
