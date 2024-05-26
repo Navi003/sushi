@@ -43,5 +43,5 @@
 }
 
 .hidden {
-  transform: translateX(-50rem);
+  transform: translateX(50rem);
 }
